@@ -5,8 +5,25 @@
     <title>Hello World</title>
 </head>
 <body>
-<h>Hello</h>
-<p>Welcome to my web!</p>
+
+
+    
+    {% if name -%}
+        <h1>Hello {{ name }} </h1>
+    {% else %}
+        <h1>Hello</h1>
+    {% endif %}
+    <p>Welcome to my web!</p>
+
+    <!-- for loop -->
+    {% if navigation is defined %}
+        <ul id="navigation">
+            {% for item in navigation %}
+                <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
 
 </body>
 </html>

@@ -1,0 +1,57 @@
+import operator
+
+print("13 + 2 -> ", operator.add(13, 2))
+print("13 - 2 -> ", operator.sub(13, 2))
+print("13 * 2 -> ", operator.mul(13, 2))
+print("13 ** 2 -> ", operator.pow(13, 2))
+print("13 % 2 -> ", operator.mod(13, 2))
+print("13 // 2 -> ", operator.floordiv(13, 2))
+print("13 / 2 -> ", operator.truediv(13, 2))
+print("13 < 2 -> ", operator.lt(13, 2))
+print("13 > 2 -> ", operator.gt(13, 2))
+print("13 <= 2 -> ", operator.le(13, 2))
+print("13 >= 2 -> ", operator.ge(13, 2))
+print("13 != 2 -> ", operator.ne(13, 2))
+print("13 == 2 -> ", operator.eq(13, 2))
+print("13 != 2 -> ", operator.ne(13, 2))
+print("not 1 (true) -> ", operator.not_(1))
+print("13 is 2 -> ", operator.is_(13, 2))
+print("13 is not 2 -> ", operator.is_not(13, 2))
+print("abs(-20) -> ", operator.abs(-20))
+print("1 and 2 -> ", operator.and_(1,2))
+print("1 and 1 -> ", operator.and_(1,1))
+print("1 and 0 -> ", operator.and_(1,0))
+print("1 or 2 -> ", operator.or_(1,2))
+print("1 or 1 -> ", operator.or_(1,1))
+print("1 or 0 -> ", operator.or_(1,0))
+print("inv(1) -> ", operator.inv(1))
+print("pos(-1) -> ", operator.pos(-1))
+print("rshift(2,1) -> ", operator.rshift(2,1))
+print("lshift(2,1) -> ", operator.lshift(2,1))
+print("xor(2,1) -> ", operator.xor(2,1))
+print("xor(2,3) -> ", operator.xor(2,3))
+print("concat(hello,world) -> ", operator.concat('hello ','world'))
+print("countOf([2,3,4,2,3,4,2,6,3,2], 2) -> ", operator.countOf([2,3,4,2,3,4,2,6,3,2], 2))
+print("contains([2,3,4,2,3,4,2,6,3,2], 2) -> ", operator.contains([2,3,4,2,3,4,2,6,3,2], 2))
+l = [3,4,2,6]
+operator.delitem(l, 2)
+print("delitem([3,4,2,6], 2) -> ", l)
+idx = operator.indexOf([3,4,2,6], 2)
+print("indexOf([3,4,2,6], 2) -> ", idx)
+print("getitem([3,4,2,6], 1) -> ", operator.getitem([3,4,2,6], 1))
+print("getitem([3,4,2,6], slice(2,4)) -> ", operator.getitem([3,4,2,6], slice(2,4)))
+l = [3,4,2,6]
+operator.setitem(l, 1, 5)
+print("setitem([3,4,2,6], 1,5) -> ", l)
+l = [3,4,2,6]
+operator.setitem(l, 1, [5,7,8])
+print("setitem([3,4,2,6], 1,[5,7,8]) -> ", l)
+l = [3,4,2,6]
+operator.setitem(l, slice(1,2), [5,7,8])
+print("setitem([3,4,2,6], slice(1,2),[5,7,8]) -> ", l)
+l2 = [i for i in l]
+operator.delitem(l, slice(1,2))
+print("delitem([",l2, "], slice(1,2)) -> ", l)
+
+
+

@@ -19,7 +19,7 @@ l2 = [10, 20, 30, 40, 50, 60, 70]
 f = lambda x, y : x + y
 
 ma = map(f, l1, l2)
-print(list(ma))
+print("Map by adding element from two list ->", list(ma))
 
 # Filter
 #
@@ -47,18 +47,18 @@ def is_even(n):
 l1 = [1,2,3,4,5,6,7,8,9]
 
 r = filter(is_even, l1)
-print("Even no : ", list(r))
+print("Even no ing filter -> ", list(r))
 
 # List Comprehension
 
 l1 = [1,2,3,4,5,6,7,8,9]
 r = [i for i in l1 if i % 2 ==0]
 
-print("Even No : ", r)
+print("Even No  using for loop -> ", r)
 
 r = [i**2 for i in l1]
 
-print("Expo no : ", list(r))
+print("Expo no using for loop -> ", list(r))
 
 # ZIP
 #

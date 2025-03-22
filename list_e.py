@@ -1,0 +1,15 @@
+l = [1,2,3, 4, 5,6]
+
+print("l -> ", l)
+l.extend([7,8,9])
+print("l.extend([7,8,9]) -> ", l)
+l.pop()
+print("l.pop() -> ", l)
+l.pop(3)
+print("l.pop(3) -> ", l)
+l.insert(5, [10,11,12])
+print("l.insert(5, [10,11,12]) -> ", l)
+l.reverse()
+print("l.reverse() -> ", l)
+l2 = l.copy()
+print("l2 -> ", l2)

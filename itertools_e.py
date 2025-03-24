@@ -172,6 +172,31 @@ def matrix(n):
 print("\nproduct example -> ") 
 [print(n) for n in list(matrix(4))]
 
+# itertools.takewhile(predicate, iterable)
+#
+# Make an iterator that returns elements from the iterable as long as the predicate is true. Roughly equivalent to:
+#
+# def takewhile(predicate, iterable):
+#     # takewhile(lambda x: x<5, [1,4,6,3,8]) → 1 4
+#     for x in iterable:
+#         if not predicate(x):
+#             break
+#         yield x
+
+def grid(min_val, max_val, step, *, num_dimensions=2):
+    axis = itertools.takewhile(lambda x: x <= max_val,
+                               itertools.count(min_val, step))
+    
+    # to handle multiple dimensions, we just need to repeat the axis that
+    # many times - tee is perfect for that
+    axes = itertools.tee(axis, num_dimensions)
+
+    # and now we just need the product of all these iterables
+    return itertools.product(*axes)
+
+print("\nGrid -> ") 
+[print(n) for n in list(grid(-1, 1, 0.5, num_dimensions=3))]
+
 
 
 

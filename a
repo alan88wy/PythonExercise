@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<GraphicsCommands>
+    <Command x="-67.0" y="133.0" width="1.0" color="#000000">GoTo</Command>
+    <Command x="-161.0" y="-14.0" width="1.0" color="#000000">GoTo</Command>
+    <Command x="42.0" y="-57.0" width="1.0" color="#000000">GoTo</Command>
+</GraphicsCommands>

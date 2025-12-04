@@ -28,7 +28,7 @@ try:
             
 except FileNotFoundError:
     print("The file 'logs.csv' was not found.")
-        
+     
 for usr, stats in data.items():
     if stats['count'] == 0:
         continue
